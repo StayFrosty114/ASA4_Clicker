@@ -4,9 +4,10 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class SC_SoundController : MonoBehaviour
 {
-
+    // Grabs an audio clip from unity
     public AudioClip sound;
 
+    // Gets the required components of the attached object.
     private Button button { get { return GetComponent<Button>(); } }
     private AudioSource source { get { return GetComponent<AudioSource>(); } }
 
@@ -22,6 +23,7 @@ public class SC_SoundController : MonoBehaviour
 
     }
 
+    // Plays the sound once on click.
     void PlaySound()
     {
         source.PlayOneShot(sound);

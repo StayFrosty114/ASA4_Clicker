@@ -8,10 +8,12 @@ public class SC_Click : MonoBehaviour
     private int clicks = 0;
     public Text clickAmount;
 
+    // Multiclick Variables
     private bool multiClick = false;
     private int multiBonus = 0;
     public Text clickBonusCounter;
 
+    // Auto-Click Variables
     private bool autoClick = false;
     private int autoBonus = 1;
     public Text autoBonusCounter;
